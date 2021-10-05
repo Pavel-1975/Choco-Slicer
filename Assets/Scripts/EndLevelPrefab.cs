@@ -22,7 +22,7 @@ public class EndLevelPrefab : MonoBehaviour
 
     private void PlayCircleBar()
     {
-        int _level = _instantiate.GetComponent<PrefabLevel>().Level;
+        int _level = _instantiate.GetComponent<PrefabLevel>().NumberStepsGet;
 
         if (++_counter == _level)
         {

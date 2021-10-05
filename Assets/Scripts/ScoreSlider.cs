@@ -13,6 +13,7 @@ public class ScoreSlider : MonoBehaviour
     [SerializeField] private NewHighScore _textNewHighScore;
     [SerializeField] private Slider _slider;
 
+    private readonly int _coefficient = 10;
     private int _maxScore = 100;
     private const int _minScore = 90;
 
@@ -63,7 +64,7 @@ public class ScoreSlider : MonoBehaviour
 
     private void SetMaxScoreSlaider()
     {
-        _maxScore = _player.CurrentLevel * 10 + _minScore;
+        _maxScore = _player.CurrentLevel * _coefficient + _minScore;
 
         _slider.maxValue = _maxScore;
     }

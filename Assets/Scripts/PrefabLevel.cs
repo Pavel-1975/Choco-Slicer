@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PrefabLevel : MonoBehaviour
 {
-    [SerializeField] private int _level;
+    [SerializeField] private int _numberStepsGet;
 
-    public int Level => _level;
+    public int NumberStepsGet => _numberStepsGet;
 }
