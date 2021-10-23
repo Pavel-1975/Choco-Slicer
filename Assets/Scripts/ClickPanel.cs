@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class ClickPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] private KnifeContainer _knife—ontainer;
+    [SerializeField] private KnifeContainer _knifeContainer;
     [SerializeField] private KnifeCollision _knifeCollision;
     [SerializeField] private NewHighScore _textNewHighScore;
     [SerializeField] private Platform _platform;
@@ -16,7 +16,7 @@ public class ClickPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        _knife—ontainer.RotateDown();
+        _knifeContainer.RotateDown();
         _knifeCollision.PositionDown();
 
         if (_platform.Playing == false)
@@ -29,7 +29,7 @@ public class ClickPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        _knife—ontainer.RotateUp();
+        _knifeContainer.RotateUp();
         _knifeCollision.PositionUp();
     }
 

@@ -23294,7 +23294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c63546e64eea04ab890569a50e7f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "_knife\u0421ontainer": {fileID: 1154516027}
+  _knifeContainer: {fileID: 1154516027}
   _knifeCollision: {fileID: 739785732}
   _textNewHighScore: {fileID: 1781906436}
   _platform: {fileID: 1781797160}

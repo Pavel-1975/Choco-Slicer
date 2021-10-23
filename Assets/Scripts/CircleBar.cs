@@ -38,7 +38,6 @@ public class CircleBar : MonoBehaviour
             _value = 0;
             _current = 0;
         }
-
     }
 
     private IEnumerator WaitForTime(float value)
