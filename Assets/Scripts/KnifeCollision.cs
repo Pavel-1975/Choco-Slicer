@@ -4,11 +4,11 @@ public class KnifeCollision : StoneCollision
 {
     [SerializeField] private Platform _platform;
     [SerializeField] private Vibration _vibration;
-    [SerializeField] private GameObject[] _sparks;
-    [SerializeField] private GameObject _particleChocolad;
-    [SerializeField] private GameObject[] _particleChocolad0;
-    [SerializeField] private GameObject[] _particleChocolad1;
-    [SerializeField] private GameObject[] _particleChocolad2;
+    [SerializeField] private ParticleSystem[] _sparks;
+    [SerializeField] private ParticleSystem _particleChocolad;
+    [SerializeField] private ParticleSystem[] _particleChocolad0;
+    [SerializeField] private ParticleSystem[] _particleChocolad1;
+    [SerializeField] private ParticleSystem[] _particleChocolad2;
     [SerializeField] private Player _player;
 
     private int _counter;
@@ -39,7 +39,7 @@ public class KnifeCollision : StoneCollision
         {
             for (int i = 0; i < _sparks.Length; i++)
             {
-                _sparks[i].GetComponent<ParticleSystem>().Play();
+                _sparks[i].Play();
             }
 
             if (stone.ActivateCounter())
@@ -80,7 +80,7 @@ public class KnifeCollision : StoneCollision
         {
             if (_counter == endBonus.Number)
             {
-                _particleChocolad.GetComponent<ParticleSystem>().Play();
+                _particleChocolad.Play();
 
                 _vibration.Play();
             }
@@ -105,11 +105,11 @@ public class KnifeCollision : StoneCollision
         }
     }
 
-    private void Play(GameObject[] particleChocolad)
+    private void Play(ParticleSystem[] particleChocolad)
     {
         for (int i = 0; i < particleChocolad.Length; i++)
         {
-            particleChocolad[i].GetComponent<ParticleSystem>().Play();
+            particleChocolad[i].Play();
         }
     }
 }

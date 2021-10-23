@@ -11420,6 +11420,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 283991552}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &283991554 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19848952, guid: 8af7fc23449fb134587debd98a00604a,
+    type: 3}
+  m_PrefabInstance: {fileID: 283991552}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &285168058
 GameObject:
   m_ObjectHideFlags: 0
@@ -16807,6 +16813,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 374548531}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &374548533 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19848952, guid: 8af7fc23449fb134587debd98a00604a,
+    type: 3}
+  m_PrefabInstance: {fileID: 374548531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &403057583
 GameObject:
   m_ObjectHideFlags: 0
@@ -16915,12 +16927,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403057583}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &422667592 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197494, guid: 8af7fc23449fb134587debd98a00604a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1612945860}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &426721132
 GameObject:
   m_ObjectHideFlags: 0
@@ -22595,12 +22601,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550654581}
   m_CullTransparentMesh: 1
---- !u!1 &564414881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197494, guid: 8af7fc23449fb134587debd98a00604a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1101584264}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &565797599
 GameObject:
   m_ObjectHideFlags: 0
@@ -22689,12 +22689,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629469000}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &636400710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197494, guid: 8af7fc23449fb134587debd98a00604a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1988359391}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &662672249
 GameObject:
   m_ObjectHideFlags: 0
@@ -23176,35 +23170,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pause: {fileID: 1557154724}
   _scoreSlader: {fileID: 1410090318}
-  "_knife\u0421ontainer": {fileID: 1154516027}
+  _knifeContainer: {fileID: 1154516027}
   _panelLevelFailed: {fileID: 799930333}
   _platform: {fileID: 1781797160}
   _vibration: {fileID: 891874667}
   _sparks:
-  - {fileID: 1389517787}
-  - {fileID: 636400710}
-  - {fileID: 422667592}
-  - {fileID: 2067332363}
-  - {fileID: 564414881}
-  _particleChocolad: {fileID: 89177120}
+  - {fileID: 374548533}
+  - {fileID: 1988359393}
+  - {fileID: 1612945862}
+  - {fileID: 283991554}
+  - {fileID: 1101584266}
+  _particleChocolad: {fileID: 89177123}
   _particleChocolad0:
-  - {fileID: 2133865586}
-  - {fileID: 878599880}
-  - {fileID: 1785179626}
-  - {fileID: 1359700037}
-  - {fileID: 195103104}
+  - {fileID: 2133865588}
+  - {fileID: 878599883}
+  - {fileID: 1785179629}
+  - {fileID: 1359700040}
+  - {fileID: 195103107}
   _particleChocolad1:
-  - {fileID: 369060648}
-  - {fileID: 858079203}
-  - {fileID: 1392659510}
-  - {fileID: 2036756162}
-  - {fileID: 2119384470}
+  - {fileID: 369060651}
+  - {fileID: 858079206}
+  - {fileID: 1392659513}
+  - {fileID: 2036756165}
+  - {fileID: 2119384473}
   _particleChocolad2:
-  - {fileID: 1475143663}
-  - {fileID: 1943098623}
-  - {fileID: 1565014854}
-  - {fileID: 1935345062}
-  - {fileID: 1983820093}
+  - {fileID: 1475143666}
+  - {fileID: 1943098626}
+  - {fileID: 1565014857}
+  - {fileID: 1935345065}
+  - {fileID: 1983820096}
   _player: {fileID: 891874670}
 --- !u!1 &750080542
 GameObject:
@@ -23300,8 +23294,8 @@ MonoBehaviour:
   _platform: {fileID: 1781797160}
   _bottomPanel: {fileID: 90174321}
   _scoreSlader: {fileID: 1410090318}
-  _settings: {fileID: 1065313581}
-  _pause: {fileID: 1557154719}
+  _settings: {fileID: 1065313586}
+  _pause: {fileID: 1557154724}
 --- !u!1001 &755478308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34852,6 +34846,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1101584264}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1101584266 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19848952, guid: 8af7fc23449fb134587debd98a00604a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1101584264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1118361472
 GameObject:
   m_ObjectHideFlags: 0
@@ -34963,7 +34963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07469cbbccabda645be2d8e539c5bc64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panelEndLevel: {fileID: 325734834}
+  _panelEndLevel: {fileID: 325734838}
   _knifeContainer: {fileID: 1154516027}
   _player: {fileID: 891874670}
 --- !u!1 &1127961831
@@ -40953,12 +40953,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: deada2bfef1dc20408d7650fe04d696c,
     type: 3}
   m_PrefabInstance: {fileID: 1378160017}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1389517787 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197494, guid: 8af7fc23449fb134587debd98a00604a,
-    type: 3}
-  m_PrefabInstance: {fileID: 374548531}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1392659510
 GameObject:
@@ -56661,6 +56655,12 @@ PrefabInstance:
 --- !u!4 &1612945861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 410886, guid: 8af7fc23449fb134587debd98a00604a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1612945860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1612945862 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19848952, guid: 8af7fc23449fb134587debd98a00604a,
     type: 3}
   m_PrefabInstance: {fileID: 1612945860}
   m_PrefabAsset: {fileID: 0}
@@ -78544,6 +78544,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1988359391}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1988359393 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19848952, guid: 8af7fc23449fb134587debd98a00604a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1988359391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2004586552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83721,12 +83727,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &2067332363 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197494, guid: 8af7fc23449fb134587debd98a00604a,
-    type: 3}
-  m_PrefabInstance: {fileID: 283991552}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2077661275
 GameObject:
   m_ObjectHideFlags: 0

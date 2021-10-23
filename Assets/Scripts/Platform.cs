@@ -48,10 +48,10 @@ public class Platform : MonoBehaviour
         {
             SetPosition(i, StartPositionZ[i]);
 
-            transform.GetComponent<InstantiatePrefab>().Destroy(i);
+            GetComponent<InstantiatePrefab>().Destroy(i);
         }
 
-        transform.GetComponent<InstantiatePrefab>().Play();
+        GetComponent<InstantiatePrefab>().Play();
 
         PauseOff();
     }
@@ -86,11 +86,11 @@ public class Platform : MonoBehaviour
 
     private void CallUpInstantiatePrefab(float positionZ, int numberPlatform)
     {
-        transform.GetComponent<InstantiatePrefab>().Destroy(numberPlatform);
+        GetComponent<InstantiatePrefab>().Destroy(numberPlatform);
 
-        _numberPrefab = transform.GetComponent<InstantiatePrefab>().SetRandom();
+        _numberPrefab = GetComponent<InstantiatePrefab>().SetRandom();
 
-        transform.GetComponent<InstantiatePrefab>().Instantiate(_numberPrefab, numberPlatform, positionZ);
+        GetComponent<InstantiatePrefab>().Instantiate(_numberPrefab, numberPlatform, positionZ);
     }
 
     private void Move()

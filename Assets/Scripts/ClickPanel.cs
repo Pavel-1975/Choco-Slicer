@@ -8,10 +8,9 @@ public class ClickPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private NewHighScore _textNewHighScore;
     [SerializeField] private Platform _platform;
     [SerializeField] private BottomPanel _bottomPanel;
-    [SerializeField] private ScoreSlider _scoreSlader;
-    
-    [SerializeField] private GameObject _settings;
-    [SerializeField] private GameObject _pause;
+    [SerializeField] private ScoreSlider _scoreSlader;   
+    [SerializeField] private Settings _settings;
+    [SerializeField] private Pause _pause;
 
 
     public void OnPointerDown(PointerEventData eventData)
@@ -39,12 +38,12 @@ public class ClickPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         _bottomPanel.MoveDown();
         _scoreSlader.EnableVisibility();
 
-        _settings.GetComponent<Settings>().MoveUp();
-        _pause.GetComponent<Pause>().MoveDown();
+        _settings.MoveUp();
+        _pause.MoveDown();
     }
 
     private void OnEnable()
     {
-        _settings.SetActive(true);
+        _settings.transform.gameObject.SetActive(true);
     }
 }

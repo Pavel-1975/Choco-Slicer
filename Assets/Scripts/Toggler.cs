@@ -28,7 +28,7 @@ public abstract class Toggler : MonoBehaviour
     {
         GetComponent<Slider>().value = value;
 
-        transform.GetComponentsInChildren<TMP_Text>()[value].enabled = false;
-        transform.GetComponentsInChildren<TMP_Text>()[value1].enabled = true;
+        GetComponentsInChildren<TMP_Text>()[value].enabled = false;
+        GetComponentsInChildren<TMP_Text>()[value1].enabled = true;
     } 
 }

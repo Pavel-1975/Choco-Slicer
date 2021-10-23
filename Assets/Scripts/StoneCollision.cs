@@ -4,7 +4,7 @@ public abstract class StoneCollision : MonoBehaviour
 {
     [SerializeField] private Pause _pause;
     [SerializeField] private ScoreSlider _scoreSlader;
-    [SerializeField] private KnifeContainer _knife—ontainer;
+    [SerializeField] private KnifeContainer _knifeContainer;
     [SerializeField] private GameObject _panelLevelFailed;
 
     public bool Collision { get; private set; }
@@ -19,7 +19,7 @@ public abstract class StoneCollision : MonoBehaviour
     {
         Collision = true;
 
-        _knife—ontainer.PositionDown();
+        _knifeContainer.PositionDown();
 
         _pause.MoveUp();
 

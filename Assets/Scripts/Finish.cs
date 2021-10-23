@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
-    [SerializeField] private GameObject _panelEndLevel;
+    [SerializeField] private EndLevel _panelEndLevel;
     [SerializeField] private KnifeContainer _knifeContainer;
     [SerializeField] private Player _player;
 
@@ -47,7 +47,7 @@ public class Finish : MonoBehaviour
     {
         yield return new WaitForSeconds(value);
 
-        _panelEndLevel.SetActive(true);
+        _panelEndLevel.transform.gameObject.SetActive(true);
 
         SetPosition();
     }
